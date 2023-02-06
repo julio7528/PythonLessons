@@ -1,39 +1,39 @@
-# #Parameters and Value Passing
-# def add_numbers(a, b):
-#     return a + b
+#Parameters and Value Passing
+def add_numbers(a, b):
+    return a + b
 
-# result = add_numbers(1, 2)
-# print(result)
+result = add_numbers(1, 2)
+print(result)
 
-# #Value passing
-# def update_list(lst):
-#     lst[0] = 'First Value'
+#Value passing
+def update_list(lst):
+    lst[0] = 'First Value'
 
-# orginal_list = ['First', 'Second', 'Third']
+orginal_list = ['First', 'Second', 'Third']
 
-# update_list(orginal_list)
-# print(orginal_list)
+update_list(orginal_list)
+print(orginal_list)
 
-# #Local Variables
+#Local Variables
 
-# def printMessage():
-#     message = "Hello World!"
-#     print(message)
+def printMessage():
+    message = "Hello World!"
+    print(message)
 
-# try:
-#     printMessage()
-#     print(message)
-# except NameError as e:
-#     print("Error: " + str(e))
+try:
+    printMessage()
+    print(message)
+except NameError as e:
+    print("Error: " + str(e))
 
-# #Global Variables
-# message = "Hello World!"
+#Global Variables
+message = "Hello World!"
 
-# def printMessage():
-#     global message
-#     print(message)
+def printMessage():
+    global message
+    print(message)
 
-# printMessage()
+printMessage()
 
 #Formal Parameters
 def add_numbers(a, b):
@@ -48,19 +48,3 @@ print(returnValue)
 
 
 
-
-
-
-# #Global Variables
-# message = "Hello World!"
-# def greet():
-#   print(message)
-  
-# greet()
-# print(message)
-
-# #Formal Parameters
-# def greet(message):
-#   print(message)
-  
-# greet("Hello World!") # Prints "Hello World!"
